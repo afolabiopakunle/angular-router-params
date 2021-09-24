@@ -12,6 +12,10 @@ export class GamesComponent implements OnInit {
     this.route.params.subscribe(data => {
       console.log(data.id)
     })
+
+    this.route.queryParams.subscribe(data => {
+      console.log(data)
+    })
   }
       
   ngOnInit() {
